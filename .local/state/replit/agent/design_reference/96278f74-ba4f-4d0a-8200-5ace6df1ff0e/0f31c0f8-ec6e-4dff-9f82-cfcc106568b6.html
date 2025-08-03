@@ -1,0 +1,440 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking Merchant Services - Expert eCommerce Payment Processing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-blue': '#1E40AF',
+                        'brand-gray': '#374151',
+                        'brand-green': '#059669',
+                        'brand-light': '#F9FAFB',
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="font-inter bg-white text-gray-900 antialiased">
+    <!-- @COMPONENT: Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-brand-blue">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        Viking Merchant Services
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-brand-gray hover:text-brand-blue transition-colors duration-200 font-medium">Home</a>
+                    <a href="#services" class="text-brand-gray hover:text-brand-blue transition-colors duration-200 font-medium">Services</a>
+                    <a href="#approach" class="text-brand-gray hover:text-brand-blue transition-colors duration-200 font-medium">Our Approach</a>
+                    <a href="#contact" class="text-brand-gray hover:text-brand-blue transition-colors duration-200 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-brand-gray hover:text-brand-blue" data-event="click:toggleMobileMenu">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-brand-light to-white py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl lg:text-6xl font-bold text-brand-gray leading-tight mb-6">
+                        Expert eCommerce Payment Processing Solutions
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Viking Merchant Services specializes in placing eCommerce businesses with both Domestic and Offshore processors at highly competitive rates. Regardless of your business type, return rates, or credit history.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-brand-blue text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold text-center">
+                            Get Free Consultation
+                        </a>
+                        <a href="#services" class="border-2 border-brand-blue text-brand-blue px-8 py-4 rounded-lg hover:bg-brand-blue hover:text-white transition-all duration-200 font-semibold text-center">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <!-- Professional business handshake representing partnership and trust -->
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" alt="Professional business partnership handshake" class="rounded-xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-brand-gray mb-6">SERVICES</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We specialize in serving high-risk and challenging business types that others won't touch. Our stable of processors can address your specific needs.
+                </p>
+            </div>
+            
+            <!-- @MAP: businessTypes.map(type => ( -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-brand-blue text-3xl mb-4">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-gray mb-3">Nutraceutical/Diet</h3>
+                    <p class="text-gray-600">Specialized processing for health supplements and dietary products with compliance expertise.</p>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-brand-blue text-3xl mb-4">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-gray mb-3">Skincare</h3>
+                    <p class="text-gray-600">Tailored solutions for beauty and skincare merchants with subscription models.</p>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-brand-blue text-3xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-gray mb-3">Credit Repair</h3>
+                    <p class="text-gray-600">Compliant processing solutions for credit repair and financial services businesses.</p>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-brand-blue text-3xl mb-4">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-gray mb-3">Travel Agencies</h3>
+                    <p class="text-gray-600">High-volume processing for travel bookings with chargeback protection.</p>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-brand-blue text-3xl mb-4">
+                        <i class="fas fa-prescription-bottle-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-gray mb-3">Pharmacy/Online Pharmacy</h3>
+                    <p class="text-gray-600">Secure processing for pharmaceutical merchants with regulatory compliance.</p>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-brand-blue text-3xl mb-4">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-gray mb-3">MLMs</h3>
+                    <p class="text-gray-600">Multi-level marketing payment solutions with distributor management features.</p>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-brand-blue text-3xl mb-4">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-gray mb-3">Entertainment</h3>
+                    <p class="text-gray-600">Flexible processing for entertainment and adult content platforms.</p>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-brand-blue text-3xl mb-4">
+                        <i class="fas fa-subscription"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brand-gray mb-3">Content/Subscription</h3>
+                    <p class="text-gray-600">Recurring billing solutions for subscription-based content platforms.</p>
+                </div>
+            </div>
+            <!-- @END_MAP )) -->
+            
+            <div class="text-center">
+                <a href="#contact" class="bg-brand-green text-white px-8 py-4 rounded-lg hover:bg-green-700 transition-colors duration-200 font-semibold inline-flex items-center">
+                    <i class="fas fa-comments mr-2"></i>
+                    Get Your Custom Solution
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services Section -->
+
+    <!-- @COMPONENT: Our Approach Section -->
+    <section id="approach" class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- Modern financial technology and data analytics visualization -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" alt="Modern financial technology and data analytics" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-brand-gray mb-6">OUR APPROACH</h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Our unique approach at Viking Merchant Services focuses on understanding your specific business challenges and matching you with the right processor from our extensive network.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-search text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-brand-gray mb-2">Comprehensive Analysis</h3>
+                                <p class="text-gray-600">We analyze your business type, transaction volume, chargeback history, and credit profile to find the perfect match.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-handshake text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-brand-gray mb-2">Strategic Partnerships</h3>
+                                <p class="text-gray-600">Our stable of domestic and offshore processors ensures we can deliver solutions regardless of your risk profile.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-chart-line text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-brand-gray mb-2">Competitive Rates</h3>
+                                <p class="text-gray-600">We negotiate the most competitive rates in the industry, helping you maximize profitability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Our Approach Section -->
+
+    <!-- @COMPONENT: Free Consultation Section -->
+    <section class="py-20 bg-brand-blue">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">FREE CONSULTATION</h2>
+            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                Get a free, no-obligation consultation to discover how we can solve your payment processing challenges. Our experts will review your business and provide tailored recommendations.
+            </p>
+            
+            <div class="bg-white rounded-xl p-8 shadow-2xl max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold text-brand-gray mb-6">Ready to Get Started?</h3>
+                <p class="text-gray-600 mb-8">
+                    Contact us today to discuss your payment processing needs. We'll deliver a solution that meets your requirements, regardless of your business type or credit history.
+                </p>
+                
+                <div class="space-y-4">
+                    <a href="mailto:stephen@vikingmerchantservices.com" class="flex items-center justify-center bg-brand-blue text-white px-6 py-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold">
+                        <i class="fas fa-envelope mr-3"></i>
+                        stephen@vikingmerchantservices.com
+                    </a>
+                    <a href="tel:+13102932000" class="flex items-center justify-center border-2 border-brand-blue text-brand-blue px-6 py-4 rounded-lg hover:bg-brand-blue hover:text-white transition-all duration-200 font-semibold">
+                        <i class="fas fa-phone mr-3"></i>
+                        +1 (310) 293-2000
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Free Consultation Section -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-brand-gray mb-6">Contact Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to transform your payment processing? Get in touch with our team of experts today.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-brand-light rounded-xl p-8">
+                        <h3 class="text-2xl font-semibold text-brand-gray mb-6">Get In Touch</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 uppercase tracking-wide">Email</p>
+                                    <a href="mailto:stephen@vikingmerchantservices.com" class="text-lg font-semibold text-brand-blue hover:text-blue-700" data-bind="contact.email">stephen@vikingmerchantservices.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 uppercase tracking-wide">Phone</p>
+                                    <a href="tel:+13102932000" class="text-lg font-semibold text-brand-blue hover:text-blue-700" data-bind="contact.phone">+1 (310) 293-2000</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 uppercase tracking-wide">Business Hours</p>
+                                    <p class="text-lg font-semibold text-brand-gray">Monday - Friday, 9 AM - 6 PM PST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold text-brand-gray mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-brand-blue rounded-lg flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-200" data-implementation="Link to Facebook page">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-brand-blue rounded-lg flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-200" data-implementation="Link to Twitter page">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-brand-blue rounded-lg flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-200" data-implementation="Link to LinkedIn page">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="bg-white border border-gray-200 rounded-xl p-8 shadow-lg" data-event="submit:handleContactForm">
+                        <h3 class="text-2xl font-semibold text-brand-gray mb-6">Send us a message</h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent" data-mock="true" placeholder="John">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent" data-mock="true" placeholder="Doe">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent" data-mock="true" placeholder="john@company.com">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="businessType" class="block text-sm font-medium text-gray-700 mb-2">Business Type</label>
+                            <select id="businessType" name="businessType" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent" data-mock="true">
+                                <option value="">Select your business type</option>
+                                <option value="nutraceutical">Nutraceutical/Diet</option>
+                                <option value="skincare">Skincare</option>
+                                <option value="credit-repair">Credit Repair</option>
+                                <option value="travel">Travel Agencies</option>
+                                <option value="pharmacy">Pharmacy/Online Pharmacy</option>
+                                <option value="mlm">MLMs</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="subscription">Content/Subscription</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent" data-mock="true" placeholder="Tell us about your payment processing needs..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-brand-blue text-white px-6 py-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold" data-implementation="Should validate form and send contact request">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-brand-gray text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        Viking Merchant Services
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Expert eCommerce payment processing solutions for high-risk businesses. Domestic and offshore processors at competitive rates.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors duration-200">Home</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="#approach" class="text-gray-300 hover:text-white transition-colors duration-200">Our Approach</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i> stephen@vikingmerchantservices.com</p>
+                        <p><i class="fas fa-phone mr-2"></i> +1 (310) 293-2000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Viking Merchant Services. All rights reserved. | Professional payment processing solutions for eCommerce businesses.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement business logic, API calls, or state management
+        (function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Mobile menu toggle functionality
+            // TODO: Implement mobile menu toggle logic
+            
+            // Form submission handling
+            const contactForm = document.querySelector('form[data-event="submit:handleContactForm"]');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement form validation and submission logic
+                    console.log('Contact form submitted - implement actual submission logic');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+import type { Express } from "express";
+import { createServer, type Server } from "http";
+
+export async function registerRoutes(app: Express): Promise<Server> {
+  // No API routes needed for this static website
+  // Future functionality can be added here if needed
+
+  const httpServer = createServer(app);
+
+  return httpServer;
+}
